@@ -5,6 +5,10 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
+html{
+	background-color: #30042c;
+}
+
 @font-face {
     font-family: HiguenSerif;
     src: url("../fonts/Higuen Serif.otf") format("opentype");
@@ -21,6 +25,9 @@ html{
     color: lightcyan;
 }
 .row-with-img{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     border: 1px solid transparent;
     padding: 130px 0;
 }
@@ -30,17 +37,11 @@ html{
 .font-30{
     font-size: 30px;
 }
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
+
 .img-box{
     width: 50%;
     border: 2px solid transparent;
-    float: left;
-    height: 120%;
+    grid-column: span 1;
     /*margin-top: 30%;*/
 }
 .img-box img{
@@ -54,9 +55,9 @@ html{
 .img-box .s90{width: 90%;}
 .img-box .s100{width: 100%;}
 .img-desc{
+    grid-column: span 1;
     width: 45%;
     border: 2px solid transparent;
-    float: left;
     text-align: center;
     font-size: 40px;
     font-family: DupincelSmallLight;
@@ -115,39 +116,34 @@ html{
 .p-80{padding-top: 80px;}
 .p-90{padding-top: 90px;}
 
-#wrapper{
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat (auto-fill, minmax (320 px, 1fr));
     width: 80%;
     border: 1px solid transparent;
     margin: 0 auto;
 }
+
 .index-img-left{
 
 }
 
 /*Styles for mobile devices*/
 @media only screen and (max-width: 320px) {
-    #wrapper{
-        /*background-color: yellowgreen;*/
-    }
+   
 }
 
 /*Styles for tablets this includes the 768px width*/
 @media only screen and (min-width: 320px) {
-    #wrapper{
-        /*background-color: maroon;*/
-    }
+    
 }
 
 /*Styles for Desktops */
 @media only screen and (min-width: 1200px) {
-    #wrapper{
-        /*background-color: orangered;*/
-    }
+    
 }
 
 /*Styles for Desktops */
 @media only screen and (min-width: 1200px) {
-    #wrapper{
-        /*background-color: orangered;*/
-    }
+   
 }
