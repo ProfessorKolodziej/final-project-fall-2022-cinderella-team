@@ -5,31 +5,149 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
-:root {
-	--color-primary: blue;
-	--color-secondary: #c00;
+@font-face {
+    font-family: HiguenSerif;
+    src: url("../fonts/Higuen Serif.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: DupincelSmallLight;
+    src: url("../fonts/DupincelLight.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+html{
+    color: lightcyan;
+}
+.row-with-img{
+    border: 1px solid transparent;
+    padding: 130px 0;
+}
+.cinderella-font{
+    font-family: HiguenSerif, serif;
+}
+.font-30{
+    font-size: 30px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.img-box{
+    width: 50%;
+    border: 2px solid transparent;
+    float: left;
+    height: 120%;
+    /*margin-top: 30%;*/
+}
+.img-box img{
+    width: 60%;
+    border: 1px solid transparent;
+    text-align: center;
+    display: block;
+}
+.img-box .s70{width: 70%;}
+.img-box .s80{width: 80%;}
+.img-box .s90{width: 90%;}
+.img-box .s100{width: 100%;}
+.img-desc{
+    width: 45%;
+    border: 2px solid transparent;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    font-family: DupincelSmallLight;
+}
+.query-box{
+    background-color: #b4ecfc;
+    height: 400px;
+    font-family: DupincelSmallLight;
+    margin: 0 auto;
+    width: 95%;
+}
+.query-box2{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.query-box-inner{
+    color: #084cac;
+    font-size: 40px;
+    text-align: center;
+}
+.query-box-inner2{
+    color: black;
+    font-size: 15px;
+}
+.border-bottom{
+    border-bottom: 2px solid mediumpurple;
 }
 
-/*
-CSS doesn't allow variables to be used in media
-queries just yet, but you can use these values
-to help you out.
+.clear-fix{clear: both;}
 
-	--size-xs: 320px;
-	--size-sm: 480px;
-	--size-md: 768px;
-	--size-lg: 1024px;
-	--size-xl: 1200px;
-*/
+.w-20{width: 20%;}
+.w-25{width: 25%;}
+.w-30{width: 30%;}
+.w-35{width: 35%;}
+.w-37{width: 37%;}
+.w-40{width: 40%;}
+.w-44{width: 44%;}
+.w-45{width: 45%;}
+.w-47{width: 47%;}
+.w-50{width: 50%;}
+.w-55{width: 55%;}
+.w-60{width: 60%;}
+.w-65{width: 65%;}
+.p-10{padding-top: 10px;}
+.p-15{padding-top: 15px;}
+.p-20{padding-top: 20px;}
+.p-25{padding-top: 25px;}
+.p-30{padding-top: 30px;}
+.p-35{padding-top: 35px;}
+.p-40{padding-top: 40px;}
+.p-45{padding-top: 45px;}
+.p-50{padding-top: 50px;}
+.p-60{padding-top: 60px;}
+.p-70{padding-top: 70px;}
+.p-80{padding-top: 80px;}
+.p-90{padding-top: 90px;}
 
-h1 {
-	color: var(--color-primary);
+#wrapper{
+    width: 80%;
+    border: 1px solid transparent;
+    margin: 0 auto;
+}
+.index-img-left{
+
 }
 
-/* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
-	.content-container {
-		margin: 0 auto;
-		max-width: 768px;
-	}
+/*Styles for mobile devices*/
+@media only screen and (max-width: 320px) {
+    #wrapper{
+        /*background-color: yellowgreen;*/
+    }
+}
+
+/*Styles for tablets this includes the 768px width*/
+@media only screen and (min-width: 320px) {
+    #wrapper{
+        /*background-color: maroon;*/
+    }
+}
+
+/*Styles for Desktops */
+@media only screen and (min-width: 1200px) {
+    #wrapper{
+        /*background-color: orangered;*/
+    }
+}
+
+/*Styles for Desktops */
+@media only screen and (min-width: 1200px) {
+    #wrapper{
+        /*background-color: orangered;*/
+    }
 }
