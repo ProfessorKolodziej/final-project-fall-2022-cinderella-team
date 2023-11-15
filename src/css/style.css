@@ -45,10 +45,12 @@ html{
     /*margin-top: 30%;*/
 }
 .img-box img{
-    width: 60%;
+    width: 100%;
+    height: auto;
     border: 1px solid transparent;
     text-align: center;
     display: block;
+    margin: auto;
 }
 
 .centered-img {
