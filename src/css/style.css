@@ -50,6 +50,11 @@ html{
     text-align: center;
     display: block;
 }
+
+.centered-img {
+    margin: auto;
+}
+
 .img-box .s70{width: 70%;}
 .img-box .s80{width: 80%;}
 .img-box .s90{width: 90%;}
