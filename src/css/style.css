@@ -5,6 +5,10 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
 	background-color: #30042c;
 }
@@ -24,6 +28,10 @@ html{
 html{
     color: lightcyan;
 }
+audio{
+    display: block;
+    margin: auto;
+}
 .row-with-img{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -33,6 +41,9 @@ html{
 }
 .cinderella-font{
     font-family: HiguenSerif, serif;
+    color: #ffaddb;
+    font-size: 60px;
+    padding-top: 15px;
 }
 .font-30{
     font-size: 30px;
@@ -67,12 +78,12 @@ html{
     border: 2px solid transparent;
     text-align: center;
     font-size: 40px;
-    font-family: DupincelSmallLight;
+    font-family: DupincelSmallLight, sans-serif;
 }
 .query-box{
     background-color: #b4ecfc;
     height: 400px;
-    font-family: DupincelSmallLight;
+    font-family: DupincelSmallLight, sans-serif;
     margin: 0 auto;
     width: 95%;
 }
@@ -123,34 +134,111 @@ html{
 .p-80{padding-top: 80px;}
 .p-90{padding-top: 90px;}
 
+#top, #bottom{
+    background-color: #084cac;
+}
+#top{
+    height: 900px;
+}
 #wrapper {
     display: grid;
-    grid-template-columns: repeat (auto-fill, minmax (320 px, 1fr));
+    /*grid-template-columns: repeat (auto-fill, minmax (320px, 1fr));*/
     width: 80%;
     border: 1px solid transparent;
     margin: 0 auto;
 }
-
-.index-img-left{
-
+.story{
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 4px;
 }
-
-/*Styles for mobile devices*/
-@media only screen and (max-width: 320px) {
-   
+.link{
+    padding: 10px;
 }
-
-/*Styles for tablets this includes the 768px width*/
-@media only screen and (min-width: 320px) {
-    
+.link a{
+    border-radius: 10px;
+    background-color: mediumpurple;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+    padding: 5px 20px;
+    text-decoration-line: none;
+    color: ghostwhite;
+    font-size: 12px;
 }
-
-/*Styles for Desktops */
-@media only screen and (min-width: 1200px) {
-    
+.link a:hover{
+    cursor: pointer;
 }
-
-/*Styles for Desktops */
-@media only screen and (min-width: 1200px) {
-   
+.start-end{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #084cac;
+}
+.start-end .left-img{
+    border: 1px solid transparent;
+    width: 40%;
+    float: left;
+}
+.start-end .right-img{
+    border: 1px solid transparent;
+    width: 40%;
+    float: right;
+    margin-top: -280px;
+}
+.the-end{
+    padding-top: 200px;
+}
+.midlink{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+.mid-link{
+    border-radius: 10px;
+    background-color: mediumpurple;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+    padding: 10px 20px;
+    text-decoration-line: none;
+    color: ghostwhite;
+    font-size: 12px;
+}
+.crown{
+    margin: 0 auto;
+    display: block;
+}
+#top .sparkle{
+    margin-top: -240px;
+}
+.sparkle{
+    border: 0px solid white;
+}
+.sparkle-left{
+    float: left;
+    width: 32%;
+    height: 100px;
+}
+.sparkle-middle{
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+.sparkle-right{
+    float: left;
+    width: 30%;
+}
+.sparkle-left img{
+    width: 25%;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+}
+.sparkle-right img{
+    width: 25%;
+    position: absolute;
+    top: 22%;
+    right: 20%;
 }
