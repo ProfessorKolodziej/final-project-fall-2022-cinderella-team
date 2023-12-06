@@ -373,3 +373,14 @@ audio {
     top: 22%;
     right: 20%;
 }
+#output, #output2{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
