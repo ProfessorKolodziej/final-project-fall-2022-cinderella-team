@@ -5,12 +5,13 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
-html{
-	background-color: #30042c;
+
+html {
+    background-color: #30042c;
 }
 
 @font-face {
@@ -19,43 +20,56 @@ html{
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: DupincelSmallLight;
     src: url("../fonts/DupincelLight.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
-html{
+
+html {
     color: lightcyan;
+
+
 }
-audio{
+
+.centered {
+    margin: auto;
+}
+
+audio {
     display: block;
     margin: auto;
 }
-.row-with-img{
-    display:grid;
+
+.row-with-img {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     border: 1px solid transparent;
     padding: 130px 0;
 }
-.cinderella-font{
+
+.cinderella-font {
     font-family: HiguenSerif, serif;
     color: #ffaddb;
     font-size: 60px;
     padding-top: 15px;
 }
-.font-30{
+
+.font-30 {
     font-size: 30px;
 }
 
-.img-box{
+.img-box {
     width: 50%;
     border: 2px solid transparent;
     grid-column: span 1;
     /*margin-top: 30%;*/
 }
-.img-box img{
+
+.img-box img {
     width: 100%;
     height: auto;
     border: 1px solid transparent;
@@ -68,11 +82,23 @@ audio{
     margin: auto;
 }
 
-.img-box .s70{width: 70%;}
-.img-box .s80{width: 80%;}
-.img-box .s90{width: 90%;}
-.img-box .s100{width: 100%;}
-.img-desc{
+.img-box .s70 {
+    width: 70%;
+}
+
+.img-box .s80 {
+    width: 80%;
+}
+
+.img-box .s90 {
+    width: 90%;
+}
+
+.img-box .s100 {
+    width: 100%;
+}
+
+.img-desc {
     grid-column: span 1;
     width: 45%;
     border: 2px solid transparent;
@@ -80,66 +106,153 @@ audio{
     font-size: 40px;
     font-family: DupincelSmallLight, sans-serif;
 }
-.query-box{
+
+.query-box {
     background-color: #b4ecfc;
     height: 400px;
     font-family: DupincelSmallLight, sans-serif;
     margin: 0 auto;
     width: 95%;
 }
-.query-box2{
+
+.query-box2 {
     width: 75%;
     margin: 0 auto;
     padding-top: 20px;
 }
-.query-box-inner{
+
+.query-box-inner {
     color: #084cac;
     font-size: 40px;
     text-align: center;
 }
-.query-box-inner2{
+
+.query-box-inner2 {
     color: black;
     font-size: 15px;
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 2px solid mediumpurple;
 }
 
-.clear-fix{clear: both;}
+.clear-fix {
+    clear: both;
+}
 
-.w-20{width: 20%;}
-.w-25{width: 25%;}
-.w-30{width: 30%;}
-.w-35{width: 35%;}
-.w-37{width: 37%;}
-.w-40{width: 40%;}
-.w-44{width: 44%;}
-.w-45{width: 45%;}
-.w-47{width: 47%;}
-.w-50{width: 50%;}
-.w-55{width: 55%;}
-.w-60{width: 60%;}
-.w-65{width: 65%;}
-.p-10{padding-top: 10px;}
-.p-15{padding-top: 15px;}
-.p-20{padding-top: 20px;}
-.p-25{padding-top: 25px;}
-.p-30{padding-top: 30px;}
-.p-35{padding-top: 35px;}
-.p-40{padding-top: 40px;}
-.p-45{padding-top: 45px;}
-.p-50{padding-top: 50px;}
-.p-60{padding-top: 60px;}
-.p-70{padding-top: 70px;}
-.p-80{padding-top: 80px;}
-.p-90{padding-top: 90px;}
+.w-20 {
+    width: 20%;
+}
 
-#top, #bottom{
+.w-25 {
+    width: 25%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-37 {
+    width: 37%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-44 {
+    width: 44%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-47 {
+    width: 47%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.p-10 {
+    padding-top: 10px;
+}
+
+.p-15 {
+    padding-top: 15px;
+}
+
+.p-20 {
+    padding-top: 20px;
+}
+
+.p-25 {
+    padding-top: 25px;
+}
+
+.p-30 {
+    padding-top: 30px;
+}
+
+.p-35 {
+    padding-top: 35px;
+}
+
+.p-40 {
+    padding-top: 40px;
+}
+
+.p-45 {
+    padding-top: 45px;
+}
+
+.p-50 {
+    padding-top: 50px;
+}
+
+.p-60 {
+    padding-top: 60px;
+}
+
+.p-70 {
+    padding-top: 70px;
+}
+
+.p-80 {
+    padding-top: 80px;
+}
+
+.p-90 {
+    padding-top: 90px;
+}
+
+#top,
+#bottom {
     background-color: #084cac;
 }
-#top{
+
+#top {
     height: 900px;
 }
+
 #wrapper {
     display: grid;
     /*grid-template-columns: repeat (auto-fill, minmax (320px, 1fr));*/
@@ -147,7 +260,8 @@ audio{
     border: 1px solid transparent;
     margin: 0 auto;
 }
-.story{
+
+.story {
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
@@ -155,10 +269,12 @@ audio{
     word-spacing: 10px;
     letter-spacing: 4px;
 }
-.link{
+
+.link {
     padding: 10px;
 }
-.link a{
+
+.link a {
     border-radius: 10px;
     background-color: mediumpurple;
     text-transform: uppercase;
@@ -168,35 +284,42 @@ audio{
     color: ghostwhite;
     font-size: 12px;
 }
-.link a:hover{
+
+.link a:hover {
     cursor: pointer;
 }
-.start-end{
+
+.start-end {
     width: 100%;
     border: 1px solid transparent;
     background-color: #084cac;
 }
-.start-end .left-img{
+
+.start-end .left-img {
     border: 1px solid transparent;
     width: 40%;
     float: left;
 }
-.start-end .right-img{
+
+.start-end .right-img {
     border: 1px solid transparent;
     width: 40%;
     float: right;
     margin-top: -280px;
 }
-.the-end{
+
+.the-end {
     padding-top: 200px;
 }
-.midlink{
+
+.midlink {
     float: left;
     width: 20%;
     text-align: center;
     font-size: 25px;
 }
-.mid-link{
+
+.mid-link {
     border-radius: 10px;
     background-color: mediumpurple;
     text-transform: uppercase;
@@ -206,39 +329,58 @@ audio{
     color: ghostwhite;
     font-size: 12px;
 }
-.crown{
+
+.crown {
     margin: 0 auto;
     display: block;
 }
-#top .sparkle{
+
+#top .sparkle {
     margin-top: -240px;
 }
-.sparkle{
+
+.sparkle {
     border: 0px solid white;
 }
-.sparkle-left{
+
+.sparkle-left {
     float: left;
     width: 32%;
     height: 100px;
 }
-.sparkle-middle{
+
+.sparkle-middle {
     float: left;
     width: 35%;
     text-align: center;
 }
-.sparkle-right{
+
+.sparkle-right {
     float: left;
     width: 30%;
 }
-.sparkle-left img{
+
+.sparkle-left img {
     width: 25%;
     position: absolute;
     top: 22%;
     left: 20%;
 }
-.sparkle-right img{
+
+.sparkle-right img {
     width: 25%;
     position: absolute;
     top: 22%;
     right: 20%;
+}
+#output, #output2{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
 }
