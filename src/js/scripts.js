@@ -13,18 +13,22 @@ document.body.addEventListener('change', function (e) {
     let output2 = document.getElementById("output2");
     output.innerHTML = "";
     output2.innerHTML = "";
+
+    const wrongMessage = '<span class="error">Oops! That’s not quite right. Try again!</span>';
+    const correctMessage = '<span class="success">Well done! That’s correct!</span>';
+
     switch (target_id) {
         case "attend-yes":
-            output.innerHTML = '<span class="error">Oops! Try again!</span>';
+            output.innerHTML = wrongMessage;
             break;
         case "attend-no":
-            output.innerHTML = '<span class="success">Hooray! That is correct!</span>';
+            output.innerHTML = correctMessage;
             break;
         case "catch-yes":
-            output2.innerHTML = '<span class="success">Correct..</span>';
+            output2.innerHTML = wrongMessage;
             break;
         case "catch-no":
-            output2.innerHTML = '<span class="error">Wrong!!!</span>';
+            output2.innerHTML = correctMessage;
             break;
     }
-})
+});
