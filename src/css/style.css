@@ -103,7 +103,7 @@ audio {
     width: 45%;
     border: 2px solid transparent;
     text-align: center;
-    font-size: 40px;
+    font-size: 16px;
     font-family: DupincelSmallLight, sans-serif;
 }
 
@@ -373,14 +373,18 @@ audio {
     top: 22%;
     right: 20%;
 }
-#output, #output2{
+
+#output,
+#output2 {
     font-size: 26px;
     text-align: center;
     font-weight: bold;
 }
-.error{
+
+.error {
     color: red;
 }
-.success{
+
+.success {
     color: green;
 }
