@@ -44,6 +44,6 @@ document.getElementById('submit-items').addEventListener('click', function() {
     if (correctCount === correctItems.length && correctCount === selectedItems.length) {
         feedbackElement.innerHTML = '<span class="success">You got it right! Well done!</span>';
     } else {
-        feedbackElement.innerHTML = '<span class="error">Check the story again, some answers are not quite right.</span>';
+        feedbackElement.innerHTML = '<span class="error">Nice try! But some answers are not quite right.</span>';
     }
 });
