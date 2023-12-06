@@ -15,16 +15,16 @@ document.body.addEventListener('change', function (e) {
     output2.innerHTML = "";
     switch (target_id) {
         case "attend-yes":
-            output.innerHTML = '<span class="error">Oops! Try again!</span>';
+            output.innerHTML = '<span class="error">Wrong!!!</span>';
             break;
         case "attend-no":
-            output.innerHTML = '<span class="success">Hooray! That’s right!🌟</span>';
+            output.innerHTML = '<span class="success">Correct..</span>';
             break;
         case "catch-yes":
-            output2.innerHTML = '<span class="success">Hooray! That’s right!🌟</span>';
+            output2.innerHTML = '<span class="success">Correct..</span>';
             break;
         case "catch-no":
-            output2.innerHTML = '<span class="error">Oops! Try again!</span>';
+            output2.innerHTML = '<span class="error">Wrong!!!</span>';
             break;
     }
 })
