@@ -255,7 +255,6 @@ audio {
 
 #wrapper {
     display: grid;
-    /*grid-template-columns: repeat (auto-fill, minmax (320px, 1fr));*/
     width: 80%;
     border: 1px solid transparent;
     margin: 0 auto;
