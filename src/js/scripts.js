@@ -47,11 +47,3 @@ document.getElementById('submit-items').addEventListener('click', function() {
         feedbackElement.innerHTML = '<span class="error">Nice try! But some answers are not quite right.</span>';
     }
 });
-
-document.querySelector('.link').addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent the default anchor behavior
-    const targetElement = document.getElementById(this.getAttribute('href').substring(1));
-    if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-});
