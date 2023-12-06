@@ -15,10 +15,10 @@ document.body.addEventListener('change', function (e) {
     output2.innerHTML = "";
     switch (target_id) {
         case "attend-yes":
-            output.innerHTML = '<span class="error">Wrong!!!</span>';
+            output.innerHTML = '<span class="error">Oops! Try again!</span>';
             break;
         case "attend-no":
-            output.innerHTML = '<span class="success">Correct..</span>';
+            output.innerHTML = '<span class="success">Hooray! That is correct!</span>';
             break;
         case "catch-yes":
             output2.innerHTML = '<span class="success">Correct..</span>';
