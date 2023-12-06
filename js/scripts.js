@@ -32,3 +32,18 @@ document.body.addEventListener('change', function (e) {
             break;
     }
 });
+
+document.getElementById('submit-items').addEventListener('click', function() {
+    let correctItems = ['pumpkin', 'lizards', 'mice'];
+    let selectedItems = document.querySelectorAll('input[name="item"]:checked');
+    let selectedValues = Array.from(selectedItems).map(item => item.value);
+    let correctCount = selectedValues.filter(value => correctItems.includes(value)).length;
+
+    let feedbackElement = document.getElementById("items-feedback");
+
+    if (correctCount === correctItems.length && correctCount === selectedItems.length) {
+        feedbackElement.innerHTML = '<span class="success">You got it right! Well done!</span>';
+    } else {
+        feedbackElement.innerHTML = '<span class="error">Nice try! But some answers are not quite right.</span>';
+    }
+});
